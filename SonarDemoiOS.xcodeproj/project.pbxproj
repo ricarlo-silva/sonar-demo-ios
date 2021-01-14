@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD19F6CA25B09EFF0060DF25 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */; };
+		AD19F6D525B09EFF0060DF25 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */; };
+		AD19F6D725B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */; };
+		AD19F6D825B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */; };
+		AD19F6D925B09EFF0060DF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AF25B09EFC0060DF25 /* ContentView.swift */; };
+		AD19F6DA25B09EFF0060DF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AF25B09EFC0060DF25 /* ContentView.swift */; };
+		AD19F6DB25B09EFF0060DF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19F6B025B09EFF0060DF25 /* Assets.xcassets */; };
+		AD19F6DC25B09EFF0060DF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19F6B025B09EFF0060DF25 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD19F6C625B09EFF0060DF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD19F6A925B09EFC0060DF25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD19F6B425B09EFF0060DF25;
+			remoteInfo = "SonarDemoiOS (iOS)";
+		};
+		AD19F6D125B09EFF0060DF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD19F6A925B09EFC0060DF25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD19F6BC25B09EFF0060DF25;
+			remoteInfo = "SonarDemoiOS (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarDemoiOSApp.swift; sourceTree = "<group>"; };
+		AD19F6AF25B09EFC0060DF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD19F6B025B09EFF0060DF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD19F6B525B09EFF0060DF25 /* SonarDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonarDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19F6B825B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD19F6BD25B09EFF0060DF25 /* SonarDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonarDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19F6BF25B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD19F6C025B09EFF0060DF25 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AD19F6C525B09EFF0060DF25 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		AD19F6CB25B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		AD19F6D625B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD19F6B225B09EFF0060DF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6BA25B09EFF0060DF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6C225B09EFF0060DF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6CD25B09EFF0060DF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD19F6A825B09EFC0060DF25 = {
+			isa = PBXGroup;
+			children = (
+				AD19F6AD25B09EFC0060DF25 /* Shared */,
+				AD19F6B725B09EFF0060DF25 /* iOS */,
+				AD19F6BE25B09EFF0060DF25 /* macOS */,
+				AD19F6C825B09EFF0060DF25 /* Tests iOS */,
+				AD19F6D325B09EFF0060DF25 /* Tests macOS */,
+				AD19F6B625B09EFF0060DF25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD19F6AD25B09EFC0060DF25 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */,
+				AD19F6AF25B09EFC0060DF25 /* ContentView.swift */,
+				AD19F6B025B09EFF0060DF25 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AD19F6B625B09EFF0060DF25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6B525B09EFF0060DF25 /* SonarDemoiOS.app */,
+				AD19F6BD25B09EFF0060DF25 /* SonarDemoiOS.app */,
+				AD19F6C525B09EFF0060DF25 /* Tests iOS.xctest */,
+				AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD19F6B725B09EFF0060DF25 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6B825B09EFF0060DF25 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		AD19F6BE25B09EFF0060DF25 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6BF25B09EFF0060DF25 /* Info.plist */,
+				AD19F6C025B09EFF0060DF25 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		AD19F6C825B09EFF0060DF25 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */,
+				AD19F6CB25B09EFF0060DF25 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		AD19F6D325B09EFF0060DF25 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */,
+				AD19F6D625B09EFF0060DF25 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD19F6B425B09EFF0060DF25 /* SonarDemoiOS (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD19F6DF25B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "SonarDemoiOS (iOS)" */;
+			buildPhases = (
+				AD19F6B125B09EFF0060DF25 /* Sources */,
+				AD19F6B225B09EFF0060DF25 /* Frameworks */,
+				AD19F6B325B09EFF0060DF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SonarDemoiOS (iOS)";
+			productName = "SonarDemoiOS (iOS)";
+			productReference = AD19F6B525B09EFF0060DF25 /* SonarDemoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD19F6BC25B09EFF0060DF25 /* SonarDemoiOS (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD19F6E225B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "SonarDemoiOS (macOS)" */;
+			buildPhases = (
+				AD19F6B925B09EFF0060DF25 /* Sources */,
+				AD19F6BA25B09EFF0060DF25 /* Frameworks */,
+				AD19F6BB25B09EFF0060DF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SonarDemoiOS (macOS)";
+			productName = "SonarDemoiOS (macOS)";
+			productReference = AD19F6BD25B09EFF0060DF25 /* SonarDemoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD19F6C425B09EFF0060DF25 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD19F6E525B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				AD19F6C125B09EFF0060DF25 /* Sources */,
+				AD19F6C225B09EFF0060DF25 /* Frameworks */,
+				AD19F6C325B09EFF0060DF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD19F6C725B09EFF0060DF25 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = AD19F6C525B09EFF0060DF25 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AD19F6CF25B09EFF0060DF25 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD19F6E825B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				AD19F6CC25B09EFF0060DF25 /* Sources */,
+				AD19F6CD25B09EFF0060DF25 /* Frameworks */,
+				AD19F6CE25B09EFF0060DF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD19F6D225B09EFF0060DF25 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD19F6A925B09EFC0060DF25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AD19F6B425B09EFF0060DF25 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AD19F6BC25B09EFF0060DF25 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AD19F6C425B09EFF0060DF25 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AD19F6B425B09EFF0060DF25;
+					};
+					AD19F6CF25B09EFF0060DF25 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AD19F6BC25B09EFF0060DF25;
+					};
+				};
+			};
+			buildConfigurationList = AD19F6AC25B09EFC0060DF25 /* Build configuration list for PBXProject "SonarDemoiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD19F6A825B09EFC0060DF25;
+			productRefGroup = AD19F6B625B09EFF0060DF25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD19F6B425B09EFF0060DF25 /* SonarDemoiOS (iOS) */,
+				AD19F6BC25B09EFF0060DF25 /* SonarDemoiOS (macOS) */,
+				AD19F6C425B09EFF0060DF25 /* Tests iOS */,
+				AD19F6CF25B09EFF0060DF25 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD19F6B325B09EFF0060DF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6DB25B09EFF0060DF25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6BB25B09EFF0060DF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6DC25B09EFF0060DF25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6C325B09EFF0060DF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6CE25B09EFF0060DF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD19F6B125B09EFF0060DF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6D925B09EFF0060DF25 /* ContentView.swift in Sources */,
+				AD19F6D725B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6B925B09EFF0060DF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6DA25B09EFF0060DF25 /* ContentView.swift in Sources */,
+				AD19F6D825B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6C125B09EFF0060DF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6CA25B09EFF0060DF25 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD19F6CC25B09EFF0060DF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19F6D525B09EFF0060DF25 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD19F6C725B09EFF0060DF25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD19F6B425B09EFF0060DF25 /* SonarDemoiOS (iOS) */;
+			targetProxy = AD19F6C625B09EFF0060DF25 /* PBXContainerItemProxy */;
+		};
+		AD19F6D225B09EFF0060DF25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD19F6BC25B09EFF0060DF25 /* SonarDemoiOS (macOS) */;
+			targetProxy = AD19F6D125B09EFF0060DF25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD19F6DD25B09EFF0060DF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD19F6DE25B09EFF0060DF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AD19F6E025B09EFF0060DF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricarlo.SonarDemoiOS;
+				PRODUCT_NAME = SonarDemoiOS;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD19F6E125B09EFF0060DF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricarlo.SonarDemoiOS;
+				PRODUCT_NAME = SonarDemoiOS;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD19F6E325B09EFF0060DF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricarlo.SonarDemoiOS;
+				PRODUCT_NAME = SonarDemoiOS;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AD19F6E425B09EFF0060DF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricarlo.SonarDemoiOS;
+				PRODUCT_NAME = SonarDemoiOS;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD19F6E625B09EFF0060DF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SonarDemoiOS (iOS)";
+			};
+			name = Debug;
+		};
+		AD19F6E725B09EFF0060DF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SonarDemoiOS (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD19F6E925B09EFF0060DF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SonarDemoiOS (macOS)";
+			};
+			name = Debug;
+		};
+		AD19F6EA25B09EFF0060DF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "SonarDemoiOS (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD19F6AC25B09EFC0060DF25 /* Build configuration list for PBXProject "SonarDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19F6DD25B09EFF0060DF25 /* Debug */,
+				AD19F6DE25B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD19F6DF25B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "SonarDemoiOS (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19F6E025B09EFF0060DF25 /* Debug */,
+				AD19F6E125B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD19F6E225B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "SonarDemoiOS (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19F6E325B09EFF0060DF25 /* Debug */,
+				AD19F6E425B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD19F6E525B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19F6E625B09EFF0060DF25 /* Debug */,
+				AD19F6E725B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD19F6E825B09EFF0060DF25 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19F6E925B09EFF0060DF25 /* Debug */,
+				AD19F6EA25B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD19F6A925B09EFC0060DF25 /* Project object */;
+}
