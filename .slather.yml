@@ -1,0 +1,4 @@
+coverage_service: cobertura_xml
+# xcodeproj: SonarDemoiOS.xcodeproj
+# scheme: SonarDemoiOS (iOS)
+# configuration: Debug
