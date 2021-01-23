@@ -20,7 +20,7 @@ platform :ios do
   desc "Generate and submit code analysis reports"
   lane :code_analysis do
     lint_analysis
-    lizard_analysis
+    # lizard_analysis
     build
     tests
     # unit_tests
