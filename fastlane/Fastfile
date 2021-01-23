@@ -22,8 +22,9 @@ platform :ios do
     lint_analysis
     # lizard_analysis
     build
-    unit_tests
-    ui_tests
+    tests
+    # unit_tests
+    # ui_tests
     coverage
     sonar_scan
   end
@@ -47,13 +48,13 @@ platform :ios do
 
   desc "Run Tests"
   private_lane :tests do |options|
-    TESTS = (options[:unit] ? ["Unit Tests iOS"] : ["Tests iOS"])
+    # TESTS = (options[:unit] ? ["Unit Tests iOS"] : ["Tests iOS"])
     scan(
       scheme: SCHEME,
       code_coverage: true,
       derived_data_path: DERIVED_DATA_PATH,
       output_directory: OUTPUT_DIRECTORY,
-      only_testing: TESTS,
+      only_testing: ["Unit Tests iOS", "Tests iOS"],
       test_without_building: true
     )
   end
@@ -75,6 +76,7 @@ platform :ios do
     slather(
       scheme: SCHEME,
       proj: XCODE_PROJ,
+      workspace: "SonarDemoiOS.xcworkspace",
       # cobertura_xml: true,
       sonarqube_xml: true,
       build_directory: DERIVED_DATA_PATH,
@@ -127,7 +129,7 @@ platform :ios do
       sonar_organization: "ricarlo-silva",
       # output_directory: OUTPUT_DIRECTORY,
       source_encoding: "UTF-8",
-      sonar_url: "https://sonarcloud.io" # "http://localhost:9000" 
+      sonar_url: "https://sonarcloud.io"
     )
   end
 
