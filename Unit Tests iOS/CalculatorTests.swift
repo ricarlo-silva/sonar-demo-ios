@@ -22,31 +22,31 @@ class CalculatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testAdd() {
+    func testPlus() {
         // 1. given
         
         // 2. when
-        let result = sut.add(num1: 5, num2: 8)
+        let result = sut.plus(num1: 5, num2: 8)
         
         // 3. then
         XCTAssertEqual(result, 13, "")
     }
     
-    func testDiv() {
+    func testDivide() {
         // 1. given
         
         // 2. when
-        let result = sut.div(num1: 10, num2: 5)
+        let result = sut.divide(num1: 10, num2: 5)
         
         // 3. then
         XCTAssertEqual(result, 2, "")
     }
     
-    func testPlus() {
+    func testMultiply() {
         // 1. given
         
         // 2. when
-        let result = sut.plus(num1: 7, num2: 3)
+        let result = sut.multiply(num1: 7, num2: 3)
         
         // 3. then
         XCTAssertEqual(result, 21, "")

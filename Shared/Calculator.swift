@@ -9,15 +9,15 @@ import Foundation
 
 struct Calculator {
 
-    func add(num1: Int, num2: Int) -> Int {
+    func plus(num1: Int, num2: Int) -> Int {
         return num1 + num2
     }
 
-    func div(num1: Int, num2: Int) -> Int {
+    func divide(num1: Int, num2: Int) -> Int {
         return num1 / num2
     }
 
-    func plus(num1: Int, num2: Int) -> Int {
+    func multiply(num1: Int, num2: Int) -> Int {
         return num1 * num2
     }
 
