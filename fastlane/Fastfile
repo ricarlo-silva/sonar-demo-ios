@@ -23,7 +23,7 @@ platform :ios do
     # lizard_analysis
     build
     unit_tests
-    ui_tests
+    # ui_tests
     coverage
     sonar_scan
   end
@@ -123,10 +123,10 @@ platform :ios do
       # project_version: "1.0",
       # project_name: "SonarDemoiOS",
       sources_path: File.expand_path("../"),
-      # sonar_organization: "ricarlo-silva",
+      sonar_organization: "ricarlo-silva",
       # output_directory: OUTPUT_DIRECTORY,
       source_encoding: "UTF-8",
-      sonar_url: "http://localhost:9000" # "https://sonarcloud.io"
+      sonar_url: "https://sonarcloud.io" # "http://localhost:9000" 
     )
   end
 
