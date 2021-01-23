@@ -17,6 +17,7 @@
 		AD19F6DC25B09EFF0060DF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19F6B025B09EFF0060DF25 /* Assets.xcassets */; };
 		AD776E7B25BC0D9300A25A87 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E7A25BC0D9300A25A87 /* Calculator.swift */; };
 		AD776E7C25BC0D9300A25A87 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E7A25BC0D9300A25A87 /* Calculator.swift */; };
+		AD776E8825BC10EF00A25A87 /* Unit_Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AD19F6BC25B09EFF0060DF25;
 			remoteInfo = "SonarDemoiOS (macOS)";
+		};
+		AD776E8A25BC10EF00A25A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD19F6A925B09EFC0060DF25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD19F6B425B09EFF0060DF25;
+			remoteInfo = "SonarDemoiOS (iOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +60,9 @@
 		AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		AD19F6D625B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD776E7A25BC0D9300A25A87 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		AD776E8525BC10EF00A25A87 /* Unit Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Tests_iOS.swift; sourceTree = "<group>"; };
+		AD776E8925BC10EF00A25A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD776E8225BC10EF00A25A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +112,7 @@
 				AD19F6BE25B09EFF0060DF25 /* macOS */,
 				AD19F6C825B09EFF0060DF25 /* Tests iOS */,
 				AD19F6D325B09EFF0060DF25 /* Tests macOS */,
+				AD776E8625BC10EF00A25A87 /* Unit Tests iOS */,
 				AD19F6B625B09EFF0060DF25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +135,7 @@
 				AD19F6BD25B09EFF0060DF25 /* SonarDemoiOS.app */,
 				AD19F6C525B09EFF0060DF25 /* Tests iOS.xctest */,
 				AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */,
+				AD776E8525BC10EF00A25A87 /* Unit Tests iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +173,15 @@
 				AD19F6D625B09EFF0060DF25 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		AD776E8625BC10EF00A25A87 /* Unit Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */,
+				AD776E8925BC10EF00A25A87 /* Info.plist */,
+			);
+			path = "Unit Tests iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +258,24 @@
 			productReference = AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AD776E8425BC10EF00A25A87 /* Unit Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD776E8C25BC10EF00A25A87 /* Build configuration list for PBXNativeTarget "Unit Tests iOS" */;
+			buildPhases = (
+				AD776E8125BC10EF00A25A87 /* Sources */,
+				AD776E8225BC10EF00A25A87 /* Frameworks */,
+				AD776E8325BC10EF00A25A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD776E8B25BC10EF00A25A87 /* PBXTargetDependency */,
+			);
+			name = "Unit Tests iOS";
+			productName = "Unit Tests iOS";
+			productReference = AD776E8525BC10EF00A25A87 /* Unit Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +299,10 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = AD19F6BC25B09EFF0060DF25;
 					};
+					AD776E8425BC10EF00A25A87 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AD19F6B425B09EFF0060DF25;
+					};
 				};
 			};
 			buildConfigurationList = AD19F6AC25B09EFC0060DF25 /* Build configuration list for PBXProject "SonarDemoiOS" */;
@@ -271,6 +322,7 @@
 				AD19F6BC25B09EFF0060DF25 /* SonarDemoiOS (macOS) */,
 				AD19F6C425B09EFF0060DF25 /* Tests iOS */,
 				AD19F6CF25B09EFF0060DF25 /* Tests macOS */,
+				AD776E8425BC10EF00A25A87 /* Unit Tests iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +352,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AD19F6CE25B09EFF0060DF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD776E8325BC10EF00A25A87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +425,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD776E8125BC10EF00A25A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD776E8825BC10EF00A25A87 /* Unit_Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -378,6 +445,11 @@
 			isa = PBXTargetDependency;
 			target = AD19F6BC25B09EFF0060DF25 /* SonarDemoiOS (macOS) */;
 			targetProxy = AD19F6D125B09EFF0060DF25 /* PBXContainerItemProxy */;
+		};
+		AD776E8B25BC10EF00A25A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD19F6B425B09EFF0060DF25 /* SonarDemoiOS (iOS) */;
+			targetProxy = AD776E8A25BC10EF00A25A87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -665,6 +737,49 @@
 			};
 			name = Release;
 		};
+		AD776E8D25BC10EF00A25A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unit Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Unit-Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonarDemoiOS.app/SonarDemoiOS";
+			};
+			name = Debug;
+		};
+		AD776E8E25BC10EF00A25A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unit Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricarlo.Unit-Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonarDemoiOS.app/SonarDemoiOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,6 +824,15 @@
 			buildConfigurations = (
 				AD19F6E925B09EFF0060DF25 /* Debug */,
 				AD19F6EA25B09EFF0060DF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD776E8C25BC10EF00A25A87 /* Build configuration list for PBXNativeTarget "Unit Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD776E8D25BC10EF00A25A87 /* Debug */,
+				AD776E8E25BC10EF00A25A87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

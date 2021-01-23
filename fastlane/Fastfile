@@ -22,7 +22,7 @@ platform :ios do
     lint_analysis
     # lizard_analysis
     build
-    # unit_tests
+    unit_tests
     ui_tests
     coverage
     sonar_scan

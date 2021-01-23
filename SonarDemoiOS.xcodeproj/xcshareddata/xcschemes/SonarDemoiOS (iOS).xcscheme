@@ -39,6 +39,16 @@
                ReferencedContainer = "container:SonarDemoiOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD776E8425BC10EF00A25A87"
+               BuildableName = "Unit Tests iOS.xctest"
+               BlueprintName = "Unit Tests iOS"
+               ReferencedContainer = "container:SonarDemoiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
