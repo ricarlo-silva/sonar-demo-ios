@@ -87,6 +87,9 @@ platform :ios do
 
   desc "Run Lint"
   lane :lint_analysis do
+    
+    create_output_directory
+
     swiftlint(
       mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
       output_file: "#{OUTPUT_DIRECTORY}/swiftlint.txt", # The path of the output file (optional)
@@ -97,6 +100,9 @@ platform :ios do
     )
   end
 
+  private_lane :create_output_directory do
+    sh("mkdir -p .#{OUTPUT_DIRECTORY}")
+  end
 
   desc "Lizard"
   lane :lizard_analysis do
