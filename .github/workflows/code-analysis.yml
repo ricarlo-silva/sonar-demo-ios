@@ -23,6 +23,7 @@ jobs:
         pod install
         brew install sonar-scanner
         brew install swiftlint
+        pip install lizard
 
     - name: Generate and submit code analysis reports
       run: bundle exec fastlane code_analysis
