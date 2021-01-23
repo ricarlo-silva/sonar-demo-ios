@@ -2,12 +2,13 @@
 //  Tests_iOS.swift
 //  Tests iOS
 //
-//  Created by 2104658825 on 14/01/21.
+//  Created by ricarlo on 14/01/21.
 //
 
 import XCTest
+@testable import SonarDemoiOS
 
-class Tests_iOS: XCTestCase {
+class LaunchTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -15,7 +16,8 @@ class Tests_iOS: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // In UI tests it’s important to set the initial state - such as interface orientation -
+        // required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {

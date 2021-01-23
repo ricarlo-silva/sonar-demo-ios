@@ -16,11 +16,46 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios custom_lane
+### ios code_analysis
 ```
-fastlane ios custom_lane
+fastlane ios code_analysis
 ```
-Description of what the lane does
+Generate and submit code analysis reports
+### ios build
+```
+fastlane ios build
+```
+Build For Testing
+### ios unit_tests
+```
+fastlane ios unit_tests
+```
+Run Unit Tests
+### ios ui_tests
+```
+fastlane ios ui_tests
+```
+Run UI Tests
+### ios coverage
+```
+fastlane ios coverage
+```
+Generate code coverage report
+### ios lint_analysis
+```
+fastlane ios lint_analysis
+```
+Run Lint
+### ios lizard_analysis
+```
+fastlane ios lizard_analysis
+```
+Lizard
+### ios sonar_scan
+```
+fastlane ios sonar_scan
+```
+Sonar scanner
 
 ----
 

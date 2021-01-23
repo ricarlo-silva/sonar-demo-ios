@@ -16,8 +16,125 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+
+  desc "Generate and submit code analysis reports"
+  lane :code_analysis do
+    lint_analysis
+    # lizard_analysis
+    build
+    tests
+    # unit_tests
+    # ui_tests
+    coverage
+    sonar_scan
   end
+
+  XCODE_PROJ = "SonarDemoiOS.xcodeproj"
+  SCHEME = "SonarDemoiOS (iOS)"
+  OUTPUT_DIRECTORY = "./sonar-reports"
+  DERIVED_DATA_PATH = "./DerivedData"
+
+
+  desc "Build For Testing"
+  lane :build do
+    scan(
+      scheme: SCHEME,
+      derived_data_path: DERIVED_DATA_PATH,
+      build_for_testing: true,
+      xcargs: "CI=true"
+    )
+  end
+
+
+  desc "Run Tests"
+  private_lane :tests do |options|
+    # TESTS = (options[:unit] ? ["Unit Tests iOS"] : ["Tests iOS"])
+    scan(
+      scheme: SCHEME,
+      code_coverage: true,
+      derived_data_path: DERIVED_DATA_PATH,
+      output_directory: OUTPUT_DIRECTORY,
+      only_testing: ["Unit Tests iOS", "Tests iOS"],
+      test_without_building: true
+    )
+  end
+
+  desc "Run Unit Tests"
+  lane :unit_tests do
+    tests(unit: true)
+  end
+
+
+  desc "Run UI Tests"
+  lane :ui_tests do
+    tests(unit: false)
+  end
+
+
+  desc "Generate code coverage report"
+  lane :coverage do
+    slather(
+      scheme: SCHEME,
+      proj: XCODE_PROJ,
+      workspace: "SonarDemoiOS.xcworkspace",
+      sonarqube_xml: true,
+      build_directory: DERIVED_DATA_PATH,
+      output_directory: OUTPUT_DIRECTORY,
+      configuration: "Debug",
+      verbose: true,
+      # html: true
+    )  
+  end
+
+
+  desc "Run Lint"
+  lane :lint_analysis do
+    
+    create_output_directory
+
+    swiftlint(
+      mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+      output_file: "#{OUTPUT_DIRECTORY}/swiftlint.json", # The path of the output file (optional)
+      config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
+      raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
+      ignore_exit_status: true,    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+      reporter: "json"
+    )
+  end
+
+  desc "Create output directory for reports"
+  private_lane :create_output_directory do
+    sh("mkdir -p .#{OUTPUT_DIRECTORY}")
+  end
+
+  desc "Lizard"
+  lane :lizard_analysis do
+    lizard(
+      language: "swift",
+      export_type: "xml",
+      report_file: "#{OUTPUT_DIRECTORY}/lizard-report.xml"
+    )
+  end
+
+
+  desc "Sonar scanner"
+  lane :sonar_scan do
+    sonar(
+      project_key: "sonar-demo-ios",
+      project_version: current_version,
+      # project_name: "SonarDemoiOS",
+      sources_path: File.expand_path("../"),
+      sonar_organization: "ricarlo-silva",
+      # output_directory: OUTPUT_DIRECTORY,
+    )
+  end
+
+  desc "Get current version name"
+  private_lane :current_version do
+    get_version_number(
+      xcodeproj: XCODE_PROJ,
+      target: SCHEME
+    )
+  end
+
 end
