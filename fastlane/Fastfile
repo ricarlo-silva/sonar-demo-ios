@@ -23,11 +23,12 @@ platform :ios do
     # lizard_analysis
     build
     unit_tests
-    # ui_tests
+    ui_tests
     coverage
     sonar_scan
   end
 
+  XCODE_PROJ = "SonarDemoiOS.xcodeproj"
   SCHEME = "SonarDemoiOS (iOS)"
   OUTPUT_DIRECTORY = "./sonar-reports"
   DERIVED_DATA_PATH = "./DerivedData"
@@ -73,7 +74,7 @@ platform :ios do
   lane :coverage do
     slather(
       scheme: SCHEME,
-      proj: "SonarDemoiOS.xcodeproj",
+      proj: XCODE_PROJ,
       cobertura_xml: true,
       sonarqube_xml: true,
       build_directory: DERIVED_DATA_PATH,
@@ -120,13 +121,21 @@ platform :ios do
   lane :sonar_scan do
     sonar(
       project_key: "sonar-demo-ios",
-      # project_version: "1.0",
+      project_version: current_version,
       # project_name: "SonarDemoiOS",
       sources_path: File.expand_path("../"),
       sonar_organization: "ricarlo-silva",
       # output_directory: OUTPUT_DIRECTORY,
       source_encoding: "UTF-8",
       sonar_url: "https://sonarcloud.io" # "http://localhost:9000" 
+    )
+  end
+
+  desc "Get current version name"
+  private_lane :current_version do
+    get_version_number(
+      xcodeproj: XCODE_PROJ,
+      target: SCHEME
     )
   end
 
