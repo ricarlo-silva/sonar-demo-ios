@@ -88,7 +88,7 @@ platform :ios do
   desc "Run Lint"
   lane :lint_analysis do
     swiftlint(
-      mode: :autocorrect,      # SwiftLint mode: :lint (default) or :autocorrect
+      mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
       output_file: "#{OUTPUT_DIRECTORY}/swiftlint.txt", # The path of the output file (optional)
       config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
       raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
