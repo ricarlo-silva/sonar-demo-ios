@@ -20,7 +20,7 @@ platform :ios do
   desc "Generate and submit code analysis reports"
   lane :code_analysis do
     lint_analysis
-    # lizard_analysis
+    lizard_analysis
     build
     tests
     # unit_tests
@@ -110,7 +110,6 @@ platform :ios do
   desc "Lizard"
   lane :lizard_analysis do
     lizard(
-      source_folder: "[SOURCE_FOLDER]",
       language: "swift",
       export_type: "xml",
       report_file: "#{OUTPUT_DIRECTORY}/lizard-report.xml"
