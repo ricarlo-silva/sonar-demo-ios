@@ -25,7 +25,7 @@ jobs:
         brew install swiftlint
 
     - name: Generate and submit code analysis reports
-      run: bundle exec fastlane metrics_cb
+      run: bundle exec fastlane code_analysis
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
