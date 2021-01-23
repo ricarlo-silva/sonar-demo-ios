@@ -1,1 +1,14 @@
+## User settings
+**/xcuserdata/*
+
+# Reports
 fastlane/report.xml
+fastlane/test_output/*
+sonar-reports/*
+.scannerwork/
+
+# CocoaPods
+Pods
+
+#Build
+DerivedData/*

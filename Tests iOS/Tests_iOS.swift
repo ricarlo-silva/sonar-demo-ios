@@ -2,10 +2,11 @@
 //  Tests_iOS.swift
 //  Tests iOS
 //
-//  Created by 2104658825 on 14/01/21.
+//  Created by ricarlo on 14/01/21.
 //
 
 import XCTest
+@testable import SonarDemoiOS
 
 class Tests_iOS: XCTestCase {
 
