@@ -24,9 +24,8 @@ platform :ios do
     build
     # unit_tests
     ui_tests
-    # tests
     coverage
-    # sonar_scan
+    sonar_scan
   end
 
   SCHEME = "SonarDemoiOS (iOS)"
@@ -93,11 +92,11 @@ platform :ios do
 
     swiftlint(
       mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
-      output_file: "#{OUTPUT_DIRECTORY}/swiftlint.txt", # The path of the output file (optional)
+      output_file: "#{OUTPUT_DIRECTORY}/swiftlint.json", # The path of the output file (optional)
       config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
       raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
       ignore_exit_status: true,    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
-      # reporter: "json"
+      reporter: "json"
     )
   end
 
