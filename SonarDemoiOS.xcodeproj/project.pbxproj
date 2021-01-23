@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD19F6CA25B09EFF0060DF25 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */; };
-		AD19F6D525B09EFF0060DF25 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */; };
+		AD19F6CA25B09EFF0060DF25 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6C925B09EFF0060DF25 /* LaunchTests.swift */; };
+		AD19F6D525B09EFF0060DF25 /* LaunchMaciOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6D425B09EFF0060DF25 /* LaunchMaciOSTests.swift */; };
 		AD19F6D725B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */; };
 		AD19F6D825B09EFF0060DF25 /* SonarDemoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AE25B09EFC0060DF25 /* SonarDemoiOSApp.swift */; };
 		AD19F6D925B09EFF0060DF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19F6AF25B09EFC0060DF25 /* ContentView.swift */; };
@@ -17,7 +17,7 @@
 		AD19F6DC25B09EFF0060DF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19F6B025B09EFF0060DF25 /* Assets.xcassets */; };
 		AD776E7B25BC0D9300A25A87 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E7A25BC0D9300A25A87 /* Calculator.swift */; };
 		AD776E7C25BC0D9300A25A87 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E7A25BC0D9300A25A87 /* Calculator.swift */; };
-		AD776E8825BC10EF00A25A87 /* Unit_Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */; };
+		AD776E8825BC10EF00A25A87 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD776E8725BC10EF00A25A87 /* CalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,14 +54,14 @@
 		AD19F6BF25B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD19F6C025B09EFF0060DF25 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		AD19F6C525B09EFF0060DF25 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		AD19F6C925B09EFF0060DF25 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		AD19F6CB25B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD19F6D025B09EFF0060DF25 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		AD19F6D425B09EFF0060DF25 /* LaunchMaciOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMaciOSTests.swift; sourceTree = "<group>"; };
 		AD19F6D625B09EFF0060DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD776E7A25BC0D9300A25A87 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		AD776E8525BC10EF00A25A87 /* Unit Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Tests_iOS.swift; sourceTree = "<group>"; };
+		AD776E8725BC10EF00A25A87 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		AD776E8925BC10EF00A25A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,7 +160,7 @@
 		AD19F6C825B09EFF0060DF25 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD19F6C925B09EFF0060DF25 /* Tests_iOS.swift */,
+				AD19F6C925B09EFF0060DF25 /* LaunchTests.swift */,
 				AD19F6CB25B09EFF0060DF25 /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -169,7 +169,7 @@
 		AD19F6D325B09EFF0060DF25 /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD19F6D425B09EFF0060DF25 /* Tests_macOS.swift */,
+				AD19F6D425B09EFF0060DF25 /* LaunchMaciOSTests.swift */,
 				AD19F6D625B09EFF0060DF25 /* Info.plist */,
 			);
 			path = "Tests macOS";
@@ -178,7 +178,7 @@
 		AD776E8625BC10EF00A25A87 /* Unit Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD776E8725BC10EF00A25A87 /* Unit_Tests_iOS.swift */,
+				AD776E8725BC10EF00A25A87 /* CalculatorTests.swift */,
 				AD776E8925BC10EF00A25A87 /* Info.plist */,
 			);
 			path = "Unit Tests iOS";
@@ -413,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD19F6CA25B09EFF0060DF25 /* Tests_iOS.swift in Sources */,
+				AD19F6CA25B09EFF0060DF25 /* LaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD19F6D525B09EFF0060DF25 /* Tests_macOS.swift in Sources */,
+				AD19F6D525B09EFF0060DF25 /* LaunchMaciOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD776E8825BC10EF00A25A87 /* Unit_Tests_iOS.swift in Sources */,
+				AD776E8825BC10EF00A25A87 /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

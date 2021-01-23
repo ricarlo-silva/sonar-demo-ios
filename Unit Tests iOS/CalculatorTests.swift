@@ -8,7 +8,7 @@
 import XCTest
 @testable import SonarDemoiOS
 
-class UnitTestsiOS: XCTestCase {
+class CalculatorTests: XCTestCase {
     
     var sut: Calculator!
     
