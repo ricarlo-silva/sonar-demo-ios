@@ -77,7 +77,6 @@ platform :ios do
       scheme: SCHEME,
       proj: XCODE_PROJ,
       workspace: "SonarDemoiOS.xcworkspace",
-      # cobertura_xml: true,
       sonarqube_xml: true,
       build_directory: DERIVED_DATA_PATH,
       output_directory: OUTPUT_DIRECTORY,
@@ -128,8 +127,6 @@ platform :ios do
       sources_path: File.expand_path("../"),
       sonar_organization: "ricarlo-silva",
       # output_directory: OUTPUT_DIRECTORY,
-      source_encoding: "UTF-8",
-      sonar_url: "https://sonarcloud.io"
     )
   end
 
