@@ -75,7 +75,7 @@ platform :ios do
     slather(
       scheme: SCHEME,
       proj: XCODE_PROJ,
-      cobertura_xml: true,
+      # cobertura_xml: true,
       sonarqube_xml: true,
       build_directory: DERIVED_DATA_PATH,
       output_directory: OUTPUT_DIRECTORY,
